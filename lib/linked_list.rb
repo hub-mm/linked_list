@@ -82,4 +82,16 @@ class LinkedList
 
     value
   end
+
+  def contains?(value)
+    current_node = @head_node
+
+    until current_node == @tail_node
+      current_node = current_node.next_node
+
+      return true if current_node.value == value
+    end
+
+    false
+  end
 end
