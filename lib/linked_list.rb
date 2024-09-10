@@ -94,4 +94,27 @@ class LinkedList
 
     false
   end
+
+  def find(value)
+    current_node = @head_node
+
+    until current_node == @tail_node
+      current_node = current_node.next_node
+
+      return current_node if current_node.value == value
+    end
+  end
+
+  def to_s
+    return nil if @head_node.nil?
+
+    current_node = @head_node
+
+    until current_node == @tail_node
+      print "( #{current_node.value} ) -> "
+      current_node = current_node.next_node
+    end
+    print "( #{@tail_node.value} ) -> nil"
+    puts "\n"
+  end
 end
