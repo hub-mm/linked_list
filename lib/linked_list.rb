@@ -3,6 +3,7 @@
 
 require_relative 'node'
 
+# Setup Linked List Class to have methods essential to building a linked list.
 class LinkedList
   attr_reader :head_node, :tail_node
 
