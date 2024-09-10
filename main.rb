@@ -17,22 +17,24 @@ list.prepend(3)
 list.prepend(2)
 list.prepend(1)
 
-puts list.head.value
-# puts list.head.next_node.inspect
-puts list.tail.value
-puts list.size
-puts list.at(-2).value
-puts list.pop
 puts list.head.next_node.inspect
-puts list.size
-puts list.pop
-puts list.pop
-puts list.pop
-puts list.pop
-puts list.pop
-puts list.pop
-puts list.pop
-puts list.size
-puts list.pop
-puts list.pop.inspect
-puts list.size
+puts "head: #{list.head.value}"
+puts "head next: #{list.head.next_node.value}"
+puts "tail value: #{list.tail.value}"
+puts "size: #{list.size}"
+puts "at value: #{list.at(-2).value}"
+puts "pop: #{list.pop}"
+puts "size: #{list.size}"
+puts "pop: #{list.pop}"
+# puts list.pop
+# puts list.pop
+# puts list.pop
+# puts list.pop
+# puts list.pop
+# puts list.pop
+# puts list.tail.value
+# puts list.size
+# puts list.pop
+puts "size: #{list.size}"
+puts list.contains?(10)
+puts list.contains?('C')
