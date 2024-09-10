@@ -17,6 +17,8 @@ list.prepend(3)
 list.prepend(2)
 list.prepend(1)
 
+list.to_s
+
 puts list.head.next_node.inspect
 puts "head: #{list.head.value}"
 puts "head next: #{list.head.next_node.value}"
@@ -26,15 +28,27 @@ puts "at value: #{list.at(-2).value}"
 puts "pop: #{list.pop}"
 puts "size: #{list.size}"
 puts "pop: #{list.pop}"
-# puts list.pop
-# puts list.pop
-# puts list.pop
-# puts list.pop
-# puts list.pop
-# puts list.pop
-# puts list.tail.value
-# puts list.size
-# puts list.pop
+
+list.to_s
+
+puts "pop: #{list.pop}"
+puts "pop: #{list.pop}"
+puts "pop: #{list.pop}"
+puts "pop: #{list.pop}"
+
+list.to_s
+
+puts "pop: #{list.pop}"
+puts "pop: #{list.pop}"
+puts "tail value: #{list.tail.value}"
 puts "size: #{list.size}"
-puts list.contains?(10)
-puts list.contains?('C')
+
+list.to_s
+
+puts "pop: #{list.pop}"
+puts "size: #{list.size}"
+puts "contains 10: #{list.contains?(10)}"
+
+puts "contains 1: #{list.contains?(1)}"
+
+list.to_s
